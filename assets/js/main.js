@@ -5,16 +5,17 @@
 
 const bikeMi = [{
     name: 'RedBike'
-    weight: '6'
-}
-    {
+    weight: 6
+},
+{
     name: 'GreenBike'
-    weight: '2'
-}
-    {
+    weight: 2
+},
+{
     name: 'BlueBike'
-    weight: '3'
-}]
+    weight: 3
+}
+];
 
 
 let bike = bikeMi[0]
