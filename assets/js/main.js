@@ -4,15 +4,15 @@
 // Stampare a schermo la bici con peso minore utilizzando destructuring e template literal
 
 const bikeMi = [{
-    name: 'RedBike'
+    name: 'RedBike',
     weight: 6
 },
 {
-    name: 'GreenBike'
+    name: 'GreenBike',
     weight: 2
 },
 {
-    name: 'BlueBike'
+    name: 'BlueBike',
     weight: 3
 }
 ];
@@ -21,12 +21,18 @@ const bikeMi = [{
 let bike = bikeMi[0]
 bikeclassHTML = document.getElementById('bikeClass');
 
-bikeMi.forEach(element) {
+bikeMi.forEach((element) => {
     if (element.weight < bike.weight) {
         bike = element
-        bikeclassHTML.innerHTML = `The bike more weight is ${bike.name}, with ${bike.weight}}`
     }
-}
+})
+
+console.log(bike)
+
+const { name, weight } = bike
+
+bikeclassHTML.innerHTML = `The lightest bike is ${name}, with a wieght of ${weight} kg`
+
 
 
 // Snack2
