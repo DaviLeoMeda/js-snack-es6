@@ -80,6 +80,8 @@ teams.forEach((element) => {
 
 
 
+
+
 // Snack 3
 // Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).
 // l'array egnerato da parte vostra dovrà essere di ad esempio nomi o cose: ['alberto', 'michele','angelo','simone']
