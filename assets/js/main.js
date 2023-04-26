@@ -42,6 +42,7 @@ bikeclassHTML.innerHTML = `The lightest bike is ${name}, with a wieght of ${weig
 // Punti fatti e falli subiti.
 // Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
+
 const teams = [
     {
         name: 'AC Milan',
@@ -76,6 +77,9 @@ teams.forEach((element) => {
     console.log(element.points, element.faulSuffered)
 })
 
+let arrayData = teams.map(({ name, faulSuffered }) => ({ name, faulSuffered }))
+
+console.log(arrayData)
 
 
 
