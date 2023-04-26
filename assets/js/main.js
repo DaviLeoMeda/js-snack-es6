@@ -42,6 +42,43 @@ bikeclassHTML.innerHTML = `The lightest bike is ${name}, with a wieght of ${weig
 // Punti fatti e falli subiti.
 // Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
 
+const teams = [
+    {
+        name: 'AC Milan',
+        points: 0,
+        faulSuffered: 0
+    },
+    {
+        name: 'Inter Fc',
+        points: 0,
+        faulSuffered: 0
+    },
+    {
+        name: 'Liverpool FC',
+        points: 0,
+        faulSuffered: 0
+    },
+    {
+        name: 'Real Madrid FC',
+        points: 0,
+        faulSuffered: 0
+    }
+]
+
+function randomNumber(min, max) {
+    return Math.floor(Math.random() * max) + min;
+}
+
+teams.forEach((element) => {
+    element.points = randomNumber(1, 100)
+    element.faulSuffered = randomNumber(1, 100)
+
+    console.log(element.points, element.faulSuffered)
+})
+
+
+
+
 
 // Snack 3
 // Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).
