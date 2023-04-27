@@ -92,3 +92,27 @@ console.log(arrayData)
 // se come numeri ad esemio ho 2 e 4 devo inserire in un array nuovo l'elemento in posizione 3
 // La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.
 // Usiamo i nuovi metodi degli array foreach o filter.
+
+const arrayNumby = []
+const arrayNames = ['Gabriele', 'Luca', 'Leonardo', 'Giovanna', 'Lucilla', 'Ilenia', 'Lavinia', 'MariaElena', 'James', 'Eleonire']
+
+let number = document.getElementById('numbers')
+let subIt = document.getElementById('submitIt')
+
+subIt.addEventListener('click', function () {
+
+    pushing();
+
+})
+
+console.log(arrayNumby)
+
+function pushing() {
+
+    for (let i = 0; i <= 2; i++) {
+
+        if (number % 2 == 0 && arrayNumby.length <= 2 && number <= arrayNames.length) {
+            arrayNumby.push(number)
+        }
+    }
+}
