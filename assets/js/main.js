@@ -93,12 +93,12 @@ console.log(arrayData)
 // La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.
 // Usiamo i nuovi metodi degli array foreach o filter.
 
-const arrayNumby = []
-const arrayNames = ['Gabriele', 'Luca', 'Leonardo', 'Giovanna', 'Lucilla', 'Ilenia', 'Lavinia', 'MariaElena', 'James', 'Eleonire']
 
-let number = document.getElementById('numbers')
+const arrayNames = ['Gabriele', 'Luca', 'Leonardo', 'Giovanna', 'Lucilla', 'Ilenia', 'Lavinia', 'MariaElena', 'James', 'Eleonire', 'Heinrich']
+
+
 let subIt = document.getElementById('submitIt')
-let min = parsInt()
+
 
 subIt.addEventListener('click', function () {
 
@@ -110,13 +110,15 @@ subIt.addEventListener('click', function () {
 
 function pushing() {
 
-    for (let i = 0; i <= 2; i++) {
-        let number = 
+    let numberMin = document.getElementById('numberMin')
+    let numberMax = document.getElementById('numberMax')
 
-        if (number % 2 == 0 && arrayNumby.length <= 2 && number <= arrayNames.length) {
-            arrayNumby.push(number)
+    if (numberMin > 0 && numberMin < 6 && numberMax > 5 && numberMax < 11) {
+
+        for (let i = numberMin; i <= numberMax; i++) {
+
+            let spaceNames = getElementById('spaceNames')
+            spaceNames.innerHTML += arrayNames[i]
         }
     }
-
-    console.log("arrayNumby" + arrayNumby);
 }
