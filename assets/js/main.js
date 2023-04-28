@@ -98,6 +98,7 @@ const arrayNames = ['Gabriele', 'Luca', 'Leonardo', 'Giovanna', 'Lucilla', 'Ilen
 
 let number = document.getElementById('numbers')
 let subIt = document.getElementById('submitIt')
+let min = parsInt()
 
 subIt.addEventListener('click', function () {
 
@@ -105,14 +106,17 @@ subIt.addEventListener('click', function () {
 
 })
 
-console.log(arrayNumby)
+//console.log(arrayNumby)
 
 function pushing() {
 
     for (let i = 0; i <= 2; i++) {
+        let number = 
 
         if (number % 2 == 0 && arrayNumby.length <= 2 && number <= arrayNames.length) {
             arrayNumby.push(number)
         }
     }
+
+    console.log("arrayNumby" + arrayNumby);
 }
